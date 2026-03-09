@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add in <head> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Kaiti Mok Rong – Portfolio</title>
+    <style>
+        .project[style*="background-color: #002145"] a:hover {
+            color: #99e6ff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: dimgray;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+        h1{
+            color: whitesmoke;
+        } h2 {
+              color: black;
+          }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            background: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .About-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 55vh; /* Full screen height */
+            background-color: #ffffff;
+            text-align: center;
+            padding: 0 1em;
+            transition: top 0.6s ease-in-out;
+            opacity: 1;
+        }
+
+        .About-header {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+
+        .About-subheader {
+            font-size: 1.5rem;
+            margin-top: 0.5em;
+            margin-left:0.5px;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header-->
+<header class="bg-dark text-white text-center py-5 mb-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3"> Kaiti Mok Rong</h1>
+        <p class="lead mb-3">Software Engineer Based in Vancouver, BC</p>
+        <p class="mb-4">UBC Computer Science (BSc) | Software Engineer</p>
+        <div>
+            <a href="https://github.com/kmr-source" target="_blank" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button" rel="noopener noreferrer">
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/kaiti-m-15a6a8a2/" target="_blank" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <a href="mailto:kmr.source@gmail.com" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button">
+                Email Me
+            </a>
+
+            <a href="dashboard.html" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button">
+               Canada Housing Dashboard Analysis
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- About me Section-->
+<div id="About-me">
+    <section class="About-me">
+        <h1 class="About-header" style="color: black;">Hi, I'm Kaiti! A CS Graduate based in Vancouver.</h1>
+        <p class="About-subheader">
+            I'm passionate about building web applications, learning new technologies, and solving real-world problems through code.
+            I’m currently seeking entry-level roles in software development.</p>
+
+    </section>
+</div>
+
+<div class=container>
+
+
+    <!-- Game APP -->
+    <div class="section-dark p-4 mb-4" style="background-color: #002145; border-radius: 15px;" >
+        <h2 style="color: white;">Game Project</h2>
+
+        <div class="card mb-4">
+            <!-- live video example -->
+            <div class="video-container" style="position:relative; padding-bottom:56.25%; overflow:hidden; max-width:100%; height:auto;">
+                <iframe
+                        src="https://www.youtube.com/embed/_nQ6M01RTg8"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                </iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Adrift in Somnium</h5>
+                <p class="card-text"> <strong>Description:</strong> A dungeon crawler game built from scratch in 4 months with a team of 6. Key features include:
+                <ul>
+                    <li>AI-driven randomized monster movements</li>
+                    <li>Turn-based combat</li>
+                    <li>6 pseudo-randomly generated maps</li>
+                    <li>5 unique enemies + 2 boss fights using A* pathfinding</li>
+                    <li>23 different artifacts with unique effects</li>
+                    <li>Randomized hero equipment</li>
+                </ul>
+                <p> <strong>Technologies:</strong> C++14, OpenGL (C),GLFW & SDL2, SDL2_mixer, Freetype, GLM, RapidXML</p>
+                <a href="https://github.com/kmr-source/Adrift-in-Somnium-Game-cpsc427-team6" class="btn btn-primary">View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Youtube LINK https://youtu.be/dro1hyb1l98-->
+    <!-- TODO_APP -->
+    <div class="section-dark p-4 mb-4" style="background-color: #002145; border-radius: 15px;" >
+        <h2 style="color: white;">TODO APP</h2>
+
+        <div class="card mb-4">
+            <!-- live video example -->
+            <div class="video-container" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; height:auto;">
+                <iframe
+                        src="https://www.youtube.com/embed/dro1hyb1l98"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                </iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">TODO TASK APP </h5>
+                <p class="card-text"> <strong>Description:</strong> The TODO app helps users manage tasks by organizing what needs to be done.
+                    Its main purpose is to improve productivity, time management, and task tracking.
+                <ul>
+                    <li>Modify tasks| Add, Delete, Due Date, Time, Priority, Description, tags  </li>
+                    <li>Takes in input from the user</li>
+                    <li>Change Status | In_Progress, TODO, UP_NEXT, DONE</li>
+                    <li>Saves & Load data</li>
+                    <li>output results to the user</li>
+                    <li>output results to the user</li>
+                </ul>
+                <p> <strong>Frontend:</strong> JavaFX, Java, Console</p>
+                <p> <strong>Testing:</strong> JUnit5</p>
+                <p><strong>Database:</strong> JSON </p>
+                <a href="https://github.com/kmr-source/Food-Delivery-App" class="btn btn-primary">View Code</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOD APP -->
+    <div class="section-dark p-4 mb-4" style="background-color: #002145; border-radius: 15px;" >
+        <h2 style="color: white;">Food Delivery App | Query & Database </h2>
+
+        <div class="card mb-4">
+            <!-- live video example -->
+            <div class="video-container" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; height:auto;">
+                <iframe
+                        src="https://www.youtube.com/embed/ABuhUbOWXbo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                </iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Food Delivery App | Query Search</h5>
+                <p class="card-text"> <strong>Description:</strong> The domain will focus on customer and delivery management logistics, primarily on the data exchanged between the users and restaurants. The goal of our project is to identify how long it takes on average for a food order to be placed, prepared, and delivered from a restaurant to its customers, as well as how payments are made by customers and received by the restaurants and drivers.
+                    Customers can also provide feedback to restaurants.
+                    Orders can also have complaints made by the user.
+                <ul>
+                    <li>Query </li>
+                    <li>Takes in input from the user (enter button or drop down)</li>
+                    <li>takes user input --> and runs the sql query</li>
+                    <li>output results to the user</li>
+                    <li>ER diagram --> Relational Schema --> Functional Dependencies --> Normalization --> relational Database </li>
+                </ul>
+                <p> <strong>Frontend:</strong> Php, Javascript, Framework: Bootstrap</p>
+                <p><strong>Backend:</strong>  PHP</p>
+                <p><strong>Database:</strong>  SQLPLUS Oracle</p>
+                <a href="https://github.com/kmr-source/Food-Delivery-App" class="btn btn-primary">View Code</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ROOM SCHEDULER -->
+    <div class="project" style="background-color: #002145; color: white;">
+        <h3>Query | UBC Room Scheduler </h3>
+
+        <p> <strong>Description:</strong> This project is a TypeScript-based
+            course scheduler built for CPSC 310 at UBC. It allows users to query and manage scheduling data such as courses and room availability. Core features include parsing .zip datasets, filtering based on user-specified criteria, and generating optimal room schedules. It uses a modular design, automated testing with Mocha/Chai,
+            and follows principles of RESTful service design.</p>
+        <ul>
+            <li>Ingest ZIP files (courses or rooms).</li>
+            <li>Parse & store data locally (no external DB).</li>
+            <li>Process user queries (filter, sort, group).</li>
+            <li>Serve results via a REST API.</li>
+            <li>Test all endpoints and data operations using Mocha/Chai.</li>
+        </ul>
+        <p><strong>Testing:</strong> mocha, chai</p>
+        <p><strong>Dataset Handling:</strong>jszip, fs-extra</p>
+        <p><strong>Build Tools:</strong> Yarn, ts-node & tsconfig</p>
+        <p><strong>Frontend:</strong> Vanilla Javascript, Next.js</p>
+
+        <p>
+            <a href="https://github.com/kmr-source/CPSC-310---Query-UBC-rooms-Scheduler/tree/main" target="_blank">View Code</a>
+        </p>
+    </div>
+
+    <!-- <h2>Resume</h2>
+     <p><a href="resume.pdf" download>Download My Resume (PDF)</a>
+     </p>-->
+
+
+</div>
+<!--"p-3 mb-2 bg-success text-white"-->
+<footer class="bg-dark text-white text-center py-5 mb-5">
+    <div class="container">
+        <p class="lead mb-3">Software Engineer Based in Vancouver, BC</p>
+        <div>
+            <a  href="https://github.com/kmr-source" target="_blank" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button" rel="noopener noreferrer">
+                GitHub
+            </a>
+            <a  href="https://www.linkedin.com/in/kaiti-m-15a6a8a2/" target="_blank" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+            <a href="mailto:kmr.source@gmail.com" class="btn btn-outline-light btn-lg mx-2 mb-2" role="button">
+                Email Me
+            </a>
+        </div>
+        <div class="footer" style="color:white">
+            &copy; 2025 Kaiti Mok Rong. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!-- Script for scrolling/ fading the top About me section -->
+<script>
+    window.addEventListener('scroll', function() {
+        const section = document.querySelector(".About-me");
+        const scroll_y = window.scrollY;
+
+        // Fade beings
+        const start_fade = 0;
+        // Where it's fully invisible and fades away at 700px
+        const end_fade = 700;
+        // opacity
+        let opac = 1;
+
+        if (scroll_y<= start_fade) {
+            opac = 1;
+        } else if (scroll_y >= end_fade) {
+            opac = 0;
+        } else {
+            opac = 1 - ((scroll_y- start_fade) / (end_fade - start_fade));
+        }
+        section.style.opacity = opac;
+    });
+
+</script>
+
+</body>
+</html>
